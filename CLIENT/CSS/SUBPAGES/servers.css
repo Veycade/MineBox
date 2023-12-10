@@ -13,15 +13,13 @@ body {
 
 .chr {
     min-height: 4px;
-    border: #ff4745 3px solid;
+    background-image: linear-gradient(to top left, #8126c6, #fb218e);
     border-radius: 5px;
 }
-
 
 button.btn-minebox {
     color: white;
     background-color: #444 !important;
-    min-width: 100%;
     text-decoration: none !important;
     border: 0px;
     margin-bottom: 10px;
@@ -31,10 +29,42 @@ button.btn-minebox {
 button.btn-minebox:hover,
 button.active {
     color: white;
-    background-color: #ff4745 !important;
-    min-width: 100%;
+    background-image: linear-gradient(to top left, #8126c6, #fb218e) !important;
     text-decoration: none !important;
     border: 0px;
     margin-bottom: 10px;
     font-weight: bold;
+}
+
+
+li.list-group-item{
+    border: none;
+    background-color: transparent !important;
+}
+
+
+button.btn-card {
+    color: white;
+    background-color: #333;
+    text-decoration: none !important;
+    border: 2px solid transparent;
+    margin-bottom: 10px;
+    font-weight: bold;
+    min-height: 300px;
+    min-width: 400px;
+    box-shadow: 0 1px 2px rgba(31, 31, 31, 0.15);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+button.btn-card:hover,
+button.active {
+    color: white;
+    background-color: #333;
+    text-decoration: none !important;
+    border-image: linear-gradient(to top left, #8126c6, #fb218e) 10 !important;
+    margin-bottom: 10px;
+    font-weight: bold;
+    min-height: 300px;
+    min-width: 400px;
+    box-shadow: 0 15px 20px rgb(22, 22, 22);
 }
