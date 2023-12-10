@@ -143,8 +143,8 @@ Distributed under the MIT License.
 [stars-url]: https://github.com/Veycade/MineBox/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Veycade/MineBox.svg?style=for-the-badge
 [issues-url]: https://github.com/Veycade/MineBox/issues
-[license-shield]: https://img.shields.io/github/license/Veycade/MineBox.svg?style=for-the-badge
-[license-url]: https://github.com/Veycade/MineBox/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/Veycade/MineBox?style=for-the-badge
+[license-url]: https://github.com/Veycade/MineBox/blob/main/LICENSE
 [product-screenshot]: preview.png
 [Electron.js]: https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white
 [Electron-url]: https://www.electronjs.org
