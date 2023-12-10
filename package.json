@@ -1,0 +1,70 @@
+{
+  "name": "minebox",
+  "version": "1.0.0",
+  "description": "Web based GUI using electron to host minecraft servers locally.",
+  "main": "minebox.js",
+  "build": {
+    "appId": "minebox.gg",
+    "icon": "icon.png",
+    "productName": "MineBox",
+    "artifactName": "${productName}.${ext}",
+    "win": {
+      "publish": [
+        {
+          "provider": "github"
+        }
+      ],
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "runAfterFinish": true,
+      "perMachine": true,
+      "include": "build/installer.nsh"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder -p always",
+    "testbuild": "electron-builder -p never"
+  },
+  "author": "Veycade",
+  "license": "MIT",
+  "gypfile": true,
+  "dependencies": {
+    "@electron/remote": "^2.0.11",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.2",
+    "chalk": "^5.3.0",
+    "chart.js": "^2.9.3",
+    "electron-unhandled": "^4.0.1",
+    "electron-updater": "^6.1.7",
+    "fs": "^0.0.1-security",
+    "jquery": "^3.7.1",
+    "os-utils": "^0.0.14",
+    "path": "^0.12.7",
+    "rethinkdb": "^2.3.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "electron": "^26.2.4",
+    "electron-builder": "^24.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veycade/MineBox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Veycade/MineBox/issues"
+  },
+  "homepage": "https://github.com/Veycade/MineBox#readme"
+}

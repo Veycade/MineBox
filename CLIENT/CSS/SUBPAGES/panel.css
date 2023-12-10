@@ -1,0 +1,46 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #222;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.chr {
+    min-height: 4px;
+    background-image: linear-gradient(to top left, #8126c6, #fb218e);
+    border-radius: 5px;
+}
+
+button.btn-minebox {
+    color: white;
+    background-color: #444 !important;
+    min-width: 100%;
+    text-decoration: none !important;
+    border: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button.btn-minebox:hover,
+button.active {
+    color: white;
+    background-image: linear-gradient(to top left, #8126c6, #fb218e) !important;
+    min-width: 100%;
+    text-decoration: none !important;
+    border: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card{
+    color: white;
+    background-color: #333;
+    border-radius: 10px;
+    min-height: 100px;
+}

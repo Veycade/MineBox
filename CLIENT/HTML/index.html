@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!--TITLE-->
+    <title>MineBox</title>
+
+    <!--META-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../IMG/logoClear.png">
+
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/2cad19d213.js" crossorigin="anonymous"></script>
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/index.css"/>
+  </head>
+  <body onload="onLoad()" style="background-color: #222;">
+    <div class="container-fluid frame">
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm-2 p-0 m-0">
+          <div class="btn-group float-end" role="group" aria-label="Basic example">
+              <button type="button" id="min" class="btn btn-transparent btn-sm min" onclick="minWindow()"><i class="fa-solid fa-minus"></i></button>
+              <button type="button" id="max" class="btn btn-transparent btn-sm max" onclick="maxWindow()"><i class="fa-solid fa-expand"></i></button>
+              <button type="button" id="exit" class="btn btn-transparent btn-sm exit" onclick="exitWindow()"><i class="fa-solid fa-x"></i></button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="particles-js"></div>
+
+
+
+    <div class="container-fluid m-0 p-0">
+      <div class="row m-0 p-0">
+        <div class="col-sm-1 m-0 p-0" style="min-width: 280px; max-width: 280px;">
+          <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-custom" style="min-height: 100vh;">
+            <div class="d-flex justify-content-center align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+              <div class="container-fluid m-0 p-0" style="text-align: center; min-width: 250px">
+                <img src="../IMG/logoClear.png" alt="" width="40" class="rounded-circle mb-3 animate__animated animate__fadeInDown">
+              <h1 class="fs-4 animate__animated animate__fadeInUp" style="font-weight: bolder;">MINEBOX</h1>
+              </div>
+            </div>
+            <div class="chr mt-3 mb-3"></div>
+            <ul class="nav nav-pills flex-column mb-auto animate__animated animate__fadeInLeft">
+
+              <li class="nav-item">
+                <button type="button" class="btn btn-minebox active" id="panel" onclick="changePage('panel')"><i class="me-2 fa-solid fa-square-poll-horizontal"></i>PANEL</button>
+              </li>
+
+              <li class="nav-item">
+                <button type="button" class="btn btn-minebox" id="servers" onclick="changePage('servers')"><i class="me-2 fa-solid fa-server"></i>SERVERS</button>
+              </li>
+
+              <li class="nav-item">
+                <button type="button" class="btn btn-minebox" id="settings" onclick="changePage('settings')"><i class="me-2 fa-solid fa-gear"></i>SETTINGS</button>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm">
+          <iframe src="../HTML/SUBPAGES/panel.html" id="mainContent" style="min-width: 100%; min-height: 100%;"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--ABOVE ME IS ALL WEBSITE DATA TO DISPLAY-->
+
+    <!--DONT TOUCH-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../JS/index.js"></script>
+    <!--DONT TOUCH-->
+  </body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    margin: auto;
+    align-content: center;
+    background-color: transparent;
+}
+
+.progress-bar{
+    background-color: white;
+}
+
+.progress{
+    border: 1px solid white !important;
+}
